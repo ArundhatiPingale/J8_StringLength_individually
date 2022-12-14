@@ -4,9 +4,11 @@ public class NumbersList {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-
-		List<String> courses=List.of("JAVA","SPRING","HIBERNATE","REST","ANGUKAR","WEBSERVICE");
-		courses.stream().forEach(System.out::println);
+		
+		List<Integer> values=List.of(1,2,3,4,5,6);
+		values.stream().
+		map(value -> value * value).
+		forEach(System.out::println);
 	
 	}
 
