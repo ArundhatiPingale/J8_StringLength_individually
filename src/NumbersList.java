@@ -7,7 +7,8 @@ public class NumbersList {
 		
 		List<String> courses=List.of("JAVA","SPRING","HIBERNATE","REST","ANGUKAR","WEBSERVICE");
 		
-		courses.stream().map(course -> course.length()).forEach(System.out::println);
+		//courses.stream().map(course -> course.length()).forEach(System.out::println);
+		courses.stream().map(course -> course+" "+course.length()).forEach(System.out::println);
 	}
 
 	
